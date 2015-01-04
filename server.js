@@ -5,7 +5,7 @@ var server = require('webserver').create(),
 
 var service = server.listen(port, function(request, response) {
 
-	if(request.method == 'POST' && request.post.url && request.post.key=='macken'){
+	if(request.method == 'POST' && request.post.url){
 		var url = request.post.url;
 
 		request_page(url, function(properties){
