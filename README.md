@@ -20,3 +20,8 @@ heroku create --stack cedar --buildpack http://github.com/stomita/heroku-buildpa
 # deploy
 git push heroku master
 ```
+
+##crontab 
+```
+*/5 * * * * sh /watchphantom.sh >> /macken/testph.log
+```
